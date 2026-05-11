@@ -1,5 +1,5 @@
 *{
- 
+ box-sizing: border-box;
 }
 body{
     margin: 0;
@@ -14,7 +14,10 @@ header {
     background-color: white;
     padding: 10px;
 }
-
+header img{
+    width: 6rem;
+    clip-path: circle(50% at 50% 50%);
+}
 h1{
    display: none;
 }
@@ -26,11 +29,16 @@ ul {
 
 li {
     list-style: none;
+    transition: background-color 1s,padding 1s;
 }
 
 a{
     text-decoration: none;
      color: black;
+}
+ li:hover{
+    padding: 5px;
+     background-color: pink;
 }
 section{
     display: grid;
@@ -42,10 +50,26 @@ section{
 }
 section div{
 display: grid;
+letter-spacing: 0.1rem;
 justify-content: center;
 align-items: center;
 }
+section button{
+    display: block;
+    margin-top: 0.6rem;
+    letter-spacing: 0.1rem;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 7px;
+    transition:  background-color 0.40s,;
+    cursor: pointer;
+}
 
+section button:hover{
+    background-color: pink;
+   
+}
 section img {
     display: grid;
    width: 100%;
