@@ -20,11 +20,24 @@ header img{
     width: 6rem;
     clip-path: circle(50% at 50% 50%);
 }
+.title{
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    box-shadow: 0.2rem 0.3rem 1.8rem ;
+    color: pink;
+}
 .menu i{
     display: none;
 }
 .x i{
     display: none;
+}
+.darkchange i{
+    font-size: 25px;
+    display: none;
+}
+.darkchangevisible{
+    display: block;
 }
 
 h1{
@@ -70,6 +83,7 @@ section button{
     margin-top: 0.6rem;
     letter-spacing: 0.1rem;
     padding: 10px 20px;
+    margin-left: 1.5rem;
     border: none;
     background-color: white;
     border-radius: 7px;
@@ -229,5 +243,30 @@ main p{
 /* footer */
 footer{
     background-color:rgb(175, 175, 175);
-    height: 20vh;
+    height: auto;
+      background-color: white;
+      box-shadow: 1rem 2rem 4rem pink;
     }
+
+ footer img{
+    width: 6rem;
+    clip-path: circle(50% at 50% 50%);
+}
+
+footer .title{
+    width: 8rem;
+}
+footer div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@media screen and  (max-width: 768px) {
+    footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}

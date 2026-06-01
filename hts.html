@@ -61,15 +61,44 @@
                 flex-direction: row-reverse;
             }
         }
-        
+        img{
+           display: none;
+            width: 50px;
+            height: auto;
+        }
+        .visibleadults{
+            display: block;
+        }
+        p
+    {
+        display: none;
+    }
+       .visiblechild{
+        display: block;
+       }
         
     </style>
 </head>
 <body>
-       <div class="container">
+       <div  class="container">
             <button class="btn-request">Request now</button>
             <button class="btn-add">Add to Cart</button>
             <button class="btn-sign">Sign up</button>
        </div>
+      <label for="color">Choose a backgroundcolor.</label>
+     <select name="color" id="color">
+        <option value="color">Color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+        <option value="yellow">Yellow</option>
+     </select>
+
+     
+        <button class="clickme">Click me!</button>
+        <img  src="/cake.jpg" alt="">
+        <p>There is noting you are a child.</p>
+
+    <script src="dropdown.js"></script>
 </body>
 </html>
