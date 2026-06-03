@@ -4,7 +4,8 @@ let img = document.querySelector('header img')
 let p = document.querySelector('header .title')
 let ul = document.querySelector('ul');
 
-if(window.innerWidth < 768){
+// setInterval(() => location.reload(), 30000)
+// if(window.innerWidth < 768){
     console.log('mobile layout');
     menu.addEventListener('click', () => {
  
@@ -16,7 +17,7 @@ if(window.innerWidth < 768){
 
 })
     
-}
+
 
   x.addEventListener('click', () => {
    ul.style.display =  ul.style.display == 'block' ? 'none' : 'block' 
@@ -26,7 +27,7 @@ if(window.innerWidth < 768){
     ul.style.display == 'none' ? p.style.display = 'block' : 'none'
     
   })
-
+ 
 
 //   let counter = document.querySelector('.counter');
 
@@ -57,33 +58,35 @@ if(window.innerWidth < 768){
 const darkmode = document.querySelector('.darkmode i');
 const darkchange = document.querySelector('.darkchange i')
 
-darkmode.addEventListener('click' , () => {
-    console.log('fa-moon');
-    // darkchange.classList.toggle('darkchangevisible')
-    darkmode.style.display = 'none';
-     darkchange.style.display = 'block';
+// darkmode.addEventListener('click' , () => {
+//     console.log('fa-moon');
+//     // darkchange.classList.toggle('darkchangevisible')
+//     darkmode.style.display = 'none';
+//      darkchange.style.display = 'block';
 
-     document.body.style.backgroundColor = 'black'
+//      document.body.style.backgroundColor = 'black'
     
+// })
+
+// darkchange.addEventListener('click', () => {
+  
+//      darkchange.style.display = 'none';
+//      darkmode.style.display = 'block';
+
+
+//      document.body.style.backgroundColor = 'White'
+// })
+
+
+
+// ✅ Cleaner approach
+darkmode.addEventListener('click', () => {
+  document.body.classList.add('dark')
 })
 
 darkchange.addEventListener('click', () => {
-  
-     darkchange.style.display = 'none';
-     darkmode.style.display = 'block';
-
-
-     document.body.style.backgroundColor = 'White'
+  document.body.classList.remove('dark')
 })
-
-
-
-
-
-
-
-
-
 
 
 
@@ -106,3 +109,5 @@ darkchange.addEventListener('click', () => {
 //   ul.style.display = ul.style.display == 'none' ? 'block' :  'none' 
 //   ul.style.display == 'block' ? h1.style.display = 'none' :  h1.style.display = 'block'
 // })
+
+

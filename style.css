@@ -42,6 +42,9 @@ header img{
     right: 5rem;
     top: 2.5rem;
 }
+body.dark {
+  background-color: black;
+}
 h1{
    display: none;
 }
@@ -106,6 +109,25 @@ clip-path: polygon(93% 12%, 7% 8%, 2% 95%, 98% 95%, 96% 95%);
     /* height: 50vh; */
 
 }
+/* Hide menu button on desktop */
+@media (min-width: 768px) {
+  .menu { display: none; }
+  .x    { display: none; }
+ 
+  ul    { display: flex !important;
+ } 
+
+ header img{
+    display: block !important;
+ }
+ .title{
+    display: block !important;
+ }
+  
+}
+
+
+
 @media (max-width: 768px) {
     header{
          justify-content: space-around; 
