@@ -4,7 +4,7 @@ let img = document.querySelector('header img')
 let p = document.querySelector('header .title')
 let ul = document.querySelector('ul');
 
-if(window.innerWidth > 768){
+if(window.innerWidth < 768){
     console.log('mobile layout');
     menu.addEventListener('click', () => {
  
@@ -59,16 +59,22 @@ const darkchange = document.querySelector('.darkchange i')
 
 darkmode.addEventListener('click' , () => {
     console.log('fa-moon');
-    if(darkmode !== 'black'){
-    // darkchange.classList.add('dar.kchangevisible');
-     document.body.style.backgroundColor = 'black';
+    // darkchange.classList.toggle('darkchangevisible')
+    darkmode.style.display = 'none';
+     darkchange.style.display = 'block';
 
-    }else if(darkmode == 'black'){
-        document.body.style.backgroundColor = 'white';
-    }
+     document.body.style.backgroundColor = 'black'
     
 })
- 
+
+darkchange.addEventListener('click', () => {
+  
+     darkchange.style.display = 'none';
+     darkmode.style.display = 'block';
+
+
+     document.body.style.backgroundColor = 'White'
+})
 
 
 
