@@ -4,6 +4,7 @@ let img = document.querySelector('header img')
 let p = document.querySelector('header .title')
 let ul = document.querySelector('ul');
 
+// menu and x
 // setInterval(() => location.reload(), 30000)
 // if(window.innerWidth < 768){
     console.log('mobile layout');
@@ -55,38 +56,51 @@ let ul = document.querySelector('ul');
 
 
 //   darkmode
+
+
+// darkmode
 const darkmode = document.querySelector('.darkmode i');
 const darkchange = document.querySelector('.darkchange i')
 
-// darkmode.addEventListener('click' , () => {
-//     console.log('fa-moon');
-//     // darkchange.classList.toggle('darkchangevisible')
-//     darkmode.style.display = 'none';
-//      darkchange.style.display = 'block';
+darkmode.addEventListener('click' , () => {
+    console.log('fa-moon');
+    // darkchange.classList.toggle('darkchangevisible')
+    darkmode.style.display = 'none';
+     darkchange.style.display = 'block';
 
-//      document.body.style.backgroundColor = 'black'
+     document.body.style.backgroundColor = ' #120f0f'
     
-// })
-
-// darkchange.addEventListener('click', () => {
-  
-//      darkchange.style.display = 'none';
-//      darkmode.style.display = 'block';
-
-
-//      document.body.style.backgroundColor = 'White'
-// })
-
-
-
-// ✅ Cleaner approach
-darkmode.addEventListener('click', () => {
-  document.body.classList.add('dark')
 })
 
 darkchange.addEventListener('click', () => {
-  document.body.classList.remove('dark')
+  
+     darkchange.style.display = 'none';
+     darkmode.style.display = 'block';
+
+
+     document.body.style.backgroundColor = 'White'
 })
+
+
+
+
+
+
+
+
+
+
+
+
+example
+// ✅ Cleaner approach
+// darkmode.addEventListener('click', () => {
+//   document.body.classList.add('dark')
+// })
+
+// darkchange.addEventListener('click', () => {
+//   document.body.classList.remove('dark')
+// })
 
 
 
