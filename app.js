@@ -92,7 +92,7 @@ darkchange.addEventListener('click', () => {
 
 
 
-example
+// example
 // ✅ Cleaner approach
 // darkmode.addEventListener('click', () => {
 //   document.body.classList.add('dark')
