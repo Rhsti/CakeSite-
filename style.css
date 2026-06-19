@@ -203,14 +203,15 @@ main img:hover{
     /* margin: 3rem; */
     margin-top: 2rem;
     margin-left: 10rem;
-    margin-bottom: -12rem;
+    /* margin-bottom: -12rem; */
     width: auto;
     height: auto;
     display: grid;
     justify-content: center;
     align-items: start;
     padding-bottom: 4rem;
-    grid-template-rows: repeat(3,300px );
+    /* grid-template-rows: repeat(3,300px ); */
+    grid-auto-rows: 300px;
     grid-template-columns: repeat(auto-fit, minmax(350px , 1fr));
 }
 .card{
@@ -255,7 +256,7 @@ main button:hover{
 /* tablet main */
 @media (max-width: 768px) {
  #container{
-    grid-template-rows: repeat(3,200px );
+    /* grid-template-rows: repeat(3,200px ); */
     grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
     margin-left: 3rem;
   row-gap: 9rem;
