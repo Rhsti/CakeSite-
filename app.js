@@ -1,33 +1,44 @@
 let menu = document.querySelector('.menu i');
  let x = document.querySelector('.x i')
-let img = document.querySelector('header img')
-let p = document.querySelector('header .title')
+// let img = document.querySelector('header img')
+// let p = document.querySelector('header .title')
 let ul = document.querySelector('ul');
+
+function openMenu() {
+  document.body.classList.add('menu-open');
+}
+function closeMenu() {
+  document.body.classList.remove('menu-open');
+}
+
+menu.addEventListener('click', openMenu);
+x.addEventListener('click', closeMenu);
+
 
 // menu and x
 // setInterval(() => location.reload(), 30000)
 // if(window.innerWidth < 768){
     console.log('mobile layout');
-    menu.addEventListener('click', () => {
+//     menu.addEventListener('click', () => {
  
-    ul.style.display =  ul.style.display == 'none' ? 'block' : 'none' 
-    ul.style.display == 'block' ? menu.style.display = 'none' : 'block'
-       ul.style.display == 'block' ? x.style.display = 'block' : 'none'
-  ul.style.display == 'block' ? img.style.display = 'none' : 'block'
-   ul.style.display == 'block' ? p.style.display = 'none' : 'block'
+//     ul.style.display =  ul.style.display == 'none' ? 'block' : 'none' 
+//     ul.style.display == 'block' ? menu.style.display = 'none' : 'block'
+//        ul.style.display == 'block' ? x.style.display = 'block' : 'none'
+//   ul.style.display == 'block' ? img.style.display = 'none' : 'block'
+//    ul.style.display == 'block' ? p.style.display = 'none' : 'block'
 
-})
+// })
     
 
 
-  x.addEventListener('click', () => {
-   ul.style.display =  ul.style.display == 'block' ? 'none' : 'block' 
-    ul.style.display == 'none' ? x.style.display = 'none' : 'block'
-    ul.style.display == 'none' ? menu.style.display = 'block' : 'none'
-     ul.style.display == 'none' ? img.style.display = 'block' : 'none'
-    ul.style.display == 'none' ? p.style.display = 'block' : 'none'
+//   x.addEventListener('click', () => {
+//    ul.style.display =  ul.style.display == 'block' ? 'none' : 'block' 
+//     ul.style.display == 'none' ? x.style.display = 'none' : 'block'
+//     ul.style.display == 'none' ? menu.style.display = 'block' : 'none'
+//      ul.style.display == 'none' ? img.style.display = 'block' : 'none'
+//     ul.style.display == 'none' ? p.style.display = 'block' : 'none'
     
-  })
+//   })
  
 
 //   let counter = document.querySelector('.counter');
@@ -67,8 +78,9 @@ darkmode.addEventListener('click' , () => {
     // darkchange.classList.toggle('darkchangevisible')
     darkmode.style.display = 'none';
      darkchange.style.display = 'block';
+  document.body.classList.add('dark');
 
-     document.body.style.backgroundColor = ' #120f0f'
+     // document.body.style.backgroundColor = ' #120f0f'
     
 })
 
@@ -77,8 +89,9 @@ darkchange.addEventListener('click', () => {
      darkchange.style.display = 'none';
      darkmode.style.display = 'block';
 
+     document.body.classList.remove('dark');
 
-     document.body.style.backgroundColor = 'White'
+     // document.body.style.backgroundColor = 'White'
 })
 
 

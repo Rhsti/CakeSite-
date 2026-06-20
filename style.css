@@ -12,7 +12,7 @@ body{
 header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: white;
     padding: 10px;
 
@@ -39,9 +39,9 @@ header img{
 }
 .darkmode i , .darkchange i{
     font-size: 26px;
-    position: absolute;
+    /* position: absolute;
     right: 5rem;
-    top: 2.5rem;
+    top: 2.5rem; */
 }
 /* body .dark {
   background-color: black;
@@ -53,21 +53,22 @@ h1{
 header ul {
    display: flex;
     gap: 3rem;
+    
 }
 
 li {
     list-style: none;
-    transition: background-color 0.15s,padding 0.15s;
+    /* transition: background-color 0.15s,padding 0.15s; */
 }
 
  a{
     text-decoration: none;
      color: black;
 }
-header li:hover{
+/* header li:hover{
     padding: 2px;
      background-color: pink;
-}
+} */
 
 /* desktop section */
 .section{
@@ -85,20 +86,21 @@ letter-spacing: 0.1rem;
 justify-content: center;
 align-items: center;
 }
-.section button{
+.section .btn{
     display: block;
     margin-top: 0.6rem;
-    letter-spacing: 0.1rem;
-    padding: 10px 20px;
+    padding: 5px 0;
     margin-left: 1.5rem;
+    text-align: center;
     border: none;
     background-color: white;
     border-radius: 7px;
     transition:  background-color 0.40s,;
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
-.section button:hover{
+.section .btn:hover{
     background-color: pink;
    
 }
@@ -111,9 +113,28 @@ clip-path: polygon(93% 12%, 7% 8%, 2% 95%, 98% 95%, 96% 95%);
     /* height: 50vh; */
 
 }
+body.dark {
+  background-color: #120f0f;
+  color: #eee;
+}
+body.dark header,
+body.dark footer,
+body.dark .card {
+  background-color: #1e1b1b;
+  color: #eee;
+}
+body.dark a {
+  color: #eee;
+}
+body .section .btn{
+      color: #1e1b1b;
+}
+body.dark .section {
+  background-color: #171616;
+}
 /* Hide menu button on desktop */
 @media (min-width: 768px) {
-  .menu { display: none; }
+  /* .menu { display: none; }
   .x    { display: none; }
  
   ul    { display: flex !important;
@@ -124,8 +145,9 @@ clip-path: polygon(93% 12%, 7% 8%, 2% 95%, 98% 95%, 96% 95%);
  }
  .title{
     display: block !important;
- }
+ } */
   
+
 }
 
 
@@ -171,6 +193,19 @@ clip-path: polygon(93% 12%, 7% 8%, 2% 95%, 98% 95%, 96% 95%);
     h1{
         display: block;
     }
+   body.menu-open ul {
+  display: flex !important;
+  gap: 1rem;
+}
+body.menu-open .menu i {
+  display: none;
+}
+body.menu-open .x i {
+  display: block;
+}
+body.menu-open header img,
+body.menu-open .title {
+  display: none;}  
 }
 
 /* desktop main */
