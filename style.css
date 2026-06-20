@@ -149,6 +149,28 @@ body.dark .section {
   
 
 }
+/* mobile */
+@media (max-width: 480px) {
+  #container {
+    margin-left: 1rem;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  main img {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  header ul {
+    gap: 0.5rem;
+  }
+}
 
 
 /* tablet header && section */
