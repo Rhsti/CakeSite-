@@ -39,9 +39,7 @@ header img{
 }
 .darkmode i , .darkchange i{
     font-size: 26px;
-    /* position: absolute;
-    right: 5rem;
-    top: 2.5rem; */
+   
 }
 /* body .dark {
   background-color: black;
@@ -150,7 +148,7 @@ body.dark .section {
 
 }
 /* mobile */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   #container {
     margin-left: 1rem;
     grid-template-columns: 1fr;
@@ -170,7 +168,7 @@ body.dark .section {
   header ul {
     gap: 0.5rem;
   }
-}
+} */
 
 
 /* tablet header && section */
@@ -212,6 +210,11 @@ body.dark .section {
     padding-right: 1rem;
     padding-top: 2.3rem;
 }
+.darkmode i , .darkchange i{
+   position: relative;
+    bottom: 2rem;
+    
+}
     h1{
         display: block;
     }
@@ -228,6 +231,17 @@ body.menu-open .x i {
 body.menu-open header img,
 body.menu-open .title {
   display: none;}  
+  body.menu-open .darkmode i{
+     position: relative;
+     bottom: 9rem;
+     right: 2rem;
+  }
+  body.menu-open .darkchange i{
+       position: relative;
+     bottom: 9rem;
+     right: 2rem;
+  }
+    
 }
 
 /* desktop main */

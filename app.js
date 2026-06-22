@@ -78,8 +78,9 @@ darkmode.addEventListener('click' , () => {
     // darkchange.classList.toggle('darkchangevisible')
     darkmode.style.display = 'none';
      darkchange.style.display = 'block';
+     
   document.body.classList.add('dark');
-
+    
      // document.body.style.backgroundColor = ' #120f0f'
     
 })
