@@ -170,6 +170,13 @@ body.dark .section {
   }
 } */
 
+@media (max-width: 480pX){
+  .darkmode i , .darkchange i{
+   position: relative;
+   right: 3rem;
+    
+}
+}
 
 /* tablet header && section */
 @media (max-width: 768px) {
