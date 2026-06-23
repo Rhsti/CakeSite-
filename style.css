@@ -169,13 +169,23 @@ body.dark .section {
     gap: 0.5rem;
   }
 } */
-
+/* mobile of header */
 @media (max-width: 480pX){
   .darkmode i , .darkchange i{
    position: relative;
-   right: 3rem;
+   right: 2rem;
     
 }
+  body.menu-open .darkmode i{
+     position: relative;
+     bottom: 10rem;
+   
+  }
+  body.menu-open .darkchange i{
+       position: relative;
+     bottom: 10rem;
+   
+  }
 }
 
 /* tablet header && section */
@@ -330,6 +340,19 @@ main button:hover{
     background-color: pink;
     transform: scale(1.05);
    
+}
+/* mobile main */
+@media (max-width: 480pX){
+    main p {
+ 
+    margin-left: 6rem; 
+  
+
+}
+main button{
+   color: black;
+    margin-left: 6rem;
+}
 }
 /* tablet main */
 @media (max-width: 768px) {
