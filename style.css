@@ -170,7 +170,7 @@ body.dark .section {
   }
 } */
 /* mobile of header */
-@media (max-width: 480pX){
+@media (max-width: 480px){
   .darkmode i , .darkchange i{
    position: relative;
    right: 2rem;
@@ -178,12 +178,12 @@ body.dark .section {
 }
   body.menu-open .darkmode i{
      position: relative;
-     bottom: 10rem;
+     bottom: 12rem;
    
   }
   body.menu-open .darkchange i{
        position: relative;
-     bottom: 10rem;
+     bottom: 12rem;
    
   }
 }
@@ -204,7 +204,7 @@ body.dark .section {
     li{
         padding: 10px;
       
-      
+
     }
   
     .menu i{
@@ -342,17 +342,19 @@ main button:hover{
    
 }
 /* mobile main */
-@media (max-width: 480pX){
+@media (max-width: 480px){
     main p {
- 
-    margin-left: 6rem; 
+ text-align: center;
+    /* margin-left: 6rem;  */
   
 
 }
 main button{
    color: black;
-    margin-left: 6rem;
+   text-align: center;
 }
+
+
 }
 /* tablet main */
 @media (max-width: 768px) {
