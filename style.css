@@ -178,12 +178,12 @@ body.dark .section {
 }
   body.menu-open .darkmode i{
      position: relative;
-     bottom: 12rem;
+     bottom: 15rem;
    
   }
   body.menu-open .darkchange i{
        position: relative;
-     bottom: 12rem;
+     bottom: 15rem;
    
   }
 }
@@ -258,7 +258,9 @@ body.menu-open .title {
      bottom: 9rem;
      right: 2rem;
   }
-    
+    .section{
+        clip-path: none;
+    }
 }
 
 /* desktop main */
@@ -344,9 +346,10 @@ main button:hover{
 /* mobile main */
 @media (max-width: 480px){
     main p {
- text-align: center;
-    /* margin-left: 6rem;  */
-  
+     /* margin-left: 6rem;  */
+    display: flex;
+    align-items: center;
+    justify-self: end;
 
 }
 main button{
